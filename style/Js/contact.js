@@ -7,5 +7,5 @@ function btnEnvoyer(){
     let inp3 = document.getElementById("inp3").value;
     let inp4 = document.getElementById("inp4").value;
 
-
+    alert(`Votre message Mr/Mme ${inp1.toUpperCase()} a bien été envoyer.`)
 }
