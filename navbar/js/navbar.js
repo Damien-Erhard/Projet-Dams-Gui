@@ -13,29 +13,28 @@ function ChangeSlide(sens) {
 setInterval("ChangeSlide(1)", 4000);
 
 // MEDIA QUERY
-let menu = document.getElementById("logoBurg")
-let menu_deux = document.getElementById("menu_2");
+let menu = document.getElementById("logoBurg");
+let menu_deux = document.getElementById('menu2');
 let open_menu = document.getElementById("nav2");
 
-menu.addEventListener('click', function() {
-    if (menu_deux.style.display = 'block') {
-        open_menu.style.display = 'block';
-        menu_deux.style.display = 'block';
-        // console.log('test');
-    } else {
-        return false;
-    }
-});
+// menu.addEventListener('click', function() {
+//     if (menu.style.display = 'block') {
+//         open_menu.style.display = 'block';
+//         // menu_deux.style.display = 'block';
+//         // console.log('test');
+//     } else {
+//         return false;
+//     }
+// });
 
 
-menu.addEventListener('click', function() {
-    open_menu.style.display = 'block';
-    if (menu_deux.style.display = 'none') {
-        menu_deux.style.display = 'block';
-    } else {
-        return false;
-    }
-});
+// menu.addEventListener('click', function() {
+//     if (open_menu.style.display = 'none') {
+//         open_menu.style.display = 'block';
+//     } else {
+//         return open_menu.style.display = "none";
+//     }
+// });
 
 
 let closeNav = document.getElementById('close');
@@ -51,7 +50,9 @@ closeNav.addEventListener('click',function() {
 
 function test(x) {
     if (x.matches){  // true ou false
-        menu.style.display = "block" ;
+        menu.style.display = "block";
+        menu_deux.style.display = "block" ;
+        open_menu.style.display = "block" ;
         btn_1.style.display = "none";
         btn_2.style.display = "none";
         btn_3.style.display = "none";
@@ -62,11 +63,12 @@ function test(x) {
         // nav2.style.justifyContent = "center" ;
 
     } else {
-        menu.style.display = "none";
+        menu.style.display = "block";
+        menu_deux.style.display = "none";
+        open_menu.style.display = "none" ;
         btn_1.style.display = "block";
         btn_2.style.display = "block";
         btn_3.style.display = "block";
-        logoBurg.style.display = "grid";
     }
 
 } 

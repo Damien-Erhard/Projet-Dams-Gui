@@ -129,7 +129,7 @@ color: white;
 }
 
 #menu2{
-    display: flex;
+    display: none;
     justify-content: center;
     flex-direction: column;
     height: 200px;
